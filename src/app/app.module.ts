@@ -12,6 +12,7 @@ import { AnimalComponent } from './body/animal/animal.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 import { ModelboxComponent } from './body/modelbox/modelbox.component';
+import { NatureComponent } from './body/nature/nature.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ModelboxComponent } from './body/modelbox/modelbox.component';
     HomeComponent,
     BirdComponent,
     AnimalComponent,
-    ModelboxComponent
+    ModelboxComponent,
+    NatureComponent
   ],
   imports: [
     BrowserModule,

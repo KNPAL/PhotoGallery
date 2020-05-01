@@ -13,7 +13,8 @@ export class HeaderComponent implements OnInit {
   public navigationListArray = [
     { name: 'Home', route: '/home' },
     { name: 'Animal Gallary', route: '/animal' },
-    { name: 'Bird Gallary', route: '/bird' }];
+    { name: 'Bird Gallary', route: '/bird' },
+    { name: 'Nature Gallary', route: '/nature' }];
   constructor(public router: Router) { }
 
   ngOnInit() {
