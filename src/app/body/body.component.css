@@ -1,0 +1,9 @@
+div{
+    background: -webkit-linear-gradient(top,#ececec,#ededed);    
+    background: -moz-linear-gradient(top,#ececec,#ededed);
+    background: -o-linear-gradient(top,#ececec,#ededed);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
