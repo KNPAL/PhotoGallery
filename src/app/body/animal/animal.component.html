@@ -4,19 +4,8 @@
     </div>
     <div class="row">
         <div class="col-md-4 p-2" *ngFor="let item of animalList; let i = index">
-            <a href="{{'#m'+i}}" data-toggle="modal">
-                <img class="img-thumbnail rounded" src="{{'../../../assets/images/' + item+'.jpg'}}">
-            </a>
-            <div class="modal fade" id="{{'m'+i}}">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">{{'Image' + (i+1)}}</div>
-                        <div class="modal-body">
-                            <img src="{{'../../../assets/images/' + item+'.jpg'}}" class="img-thumbnail thumbnailwidth">
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <img class="img-thumbnail rounded" (click)="openDialog(i)"
+                src="{{'../../../assets/images/' + item+'.jpg'}}">
         </div>
     </div>
 </div>

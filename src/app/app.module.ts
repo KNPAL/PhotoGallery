@@ -9,6 +9,9 @@ import { BodyComponent } from './body/body.component';
 import { HomeComponent } from './body/home/home.component';
 import { BirdComponent } from './body/bird/bird.component';
 import { AnimalComponent } from './body/animal/animal.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './material.module';
+import { ModelboxComponent } from './body/modelbox/modelbox.component';
 
 @NgModule({
   declarations: [
@@ -18,13 +21,17 @@ import { AnimalComponent } from './body/animal/animal.component';
     BodyComponent,
     HomeComponent,
     BirdComponent,
-    AnimalComponent
+    AnimalComponent,
+    ModelboxComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MaterialModule
   ],
   providers: [],
+  entryComponents: [ModelboxComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
