@@ -12,7 +12,7 @@ export class AnimalComponent implements OnInit {
   public sectionHeaderName = '';
   public animalList = ['Animal1', 'Animal2', 'Animal10', 'Animal4', 'Animal5', 'Animal6', 'Animal7', 'Animal8', 'Animal9'];
   constructor(public dialog: MatDialog) {
-    this.sectionHeaderName = 'Animal Photo Gallary';
+    this.sectionHeaderName = 'Animal Photos';
   }
 
   ngOnInit() {

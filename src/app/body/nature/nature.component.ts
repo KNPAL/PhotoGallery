@@ -11,7 +11,9 @@ export class NatureComponent implements OnInit {
 
   public sectionHeaderName = '';
   public natureList = ['natural1', 'natural2', 'natural3', 'natural4'];
-  constructor(public dialog: MatDialog) { }
+  constructor(public dialog: MatDialog) {
+    this.sectionHeaderName = 'Nature Photos';
+  }
 
   ngOnInit() {
   }

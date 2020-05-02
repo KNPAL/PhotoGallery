@@ -9,6 +9,7 @@
     right: 0px;
     top:38%;
     cursor: pointer;
+    color:#f2f2f2;
 }
 
 .arrowleft{
@@ -17,4 +18,5 @@
     top:38%;
     cursor: pointer;
     left: 0px;
+    color:#f2f2f2;
 }

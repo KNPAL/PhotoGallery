@@ -9,12 +9,14 @@ import { Router } from '@angular/router';
 export class HeaderComponent implements OnInit {
 
   public showNavBar: boolean;
-  public siteName = 'Photo Gallary';
+  public siteName = 'Photo Gallery';
   public navigationListArray = [
     { name: 'Home', route: '/home' },
-    { name: 'Animal Gallary', route: '/animal' },
-    { name: 'Bird Gallary', route: '/bird' },
-    { name: 'Nature Gallary', route: '/nature' }];
+    { name: 'Animal', route: '/animal' },
+    { name: 'Bird', route: '/bird' },
+    { name: 'Nature', route: '/nature' },
+    { name: 'Space', route: '/Space' }
+  ];
   constructor(public router: Router) { }
 
   ngOnInit() {

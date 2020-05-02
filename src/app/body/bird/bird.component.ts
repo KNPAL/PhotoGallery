@@ -10,9 +10,9 @@ import { MatDialog } from '@angular/material/dialog';
 export class BirdComponent implements OnInit {
 
   public sectionHeaderName = '';
-  public birdList = ['Bird1', 'Bird2', 'Bird3', 'Bird5', 'Bird6', 'Bird7', 'Bird8', 'Bird9'];
+  public birdList = ['Bird1', 'Bird2', 'Bird3', 'Bird5', 'Bird6', 'Bird7', 'Bird8'];
   constructor(public dialog: MatDialog) {
-    this.sectionHeaderName = 'Bird Photo Gallary';
+    this.sectionHeaderName = 'Bird Photos';
   }
 
   ngOnInit() {
