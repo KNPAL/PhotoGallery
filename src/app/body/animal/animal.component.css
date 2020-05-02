@@ -1,18 +1,4 @@
-.padding0{
-    padding-left: 0px;
-    padding-right: 0px;
-}
-
 .img-thumbnail img{
         width: 300px;
         height: 200px;
-}
-
-.carousel-item img{
-    height: 300px;
-	width:100%;
-}
-
-.thumbnailwidth{
-    width: 400px;
 }
