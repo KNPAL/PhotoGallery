@@ -1,0 +1,20 @@
+.myparent{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.arrowright{
+    position: absolute;
+    font-size: 75px;
+    right: 0px;
+    top:38%;
+    cursor: pointer;
+}
+
+.arrowleft{
+    position: absolute;
+    font-size:75px;
+    top:38%;
+    cursor: pointer;
+    left: 0px;
+}
