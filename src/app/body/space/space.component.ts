@@ -3,25 +3,24 @@ import { MatDialog } from '@angular/material/dialog';
 import { ModelboxComponent } from '../modelbox/modelbox.component';
 
 @Component({
-  selector: 'app-nature',
-  templateUrl: './nature.component.html',
-  styleUrls: ['./nature.component.css']
+  selector: 'app-space',
+  templateUrl: './space.component.html',
+  styleUrls: ['./space.component.css']
 })
-export class NatureComponent implements OnInit {
+export class SpaceComponent implements OnInit {
 
   public sectionHeaderName = '';
-  public natureList = ['natural1', 'natural2', 'natural3'];
+  public spaceList = ['space1'];
   constructor(public dialog: MatDialog) {
-    this.sectionHeaderName = 'Nature Photos';
+    this.sectionHeaderName = 'Space Photos';
   }
-
   ngOnInit() {
   }
 
   openDialog(ind): void {
     const dialogRef = this.dialog.open(ModelboxComponent, {
       width: '550px',
-      data: { list: this.natureList, index: ind }
+      data: { list: this.spaceList, index: ind }
     });
 
     dialogRef.afterClosed().subscribe(result => {

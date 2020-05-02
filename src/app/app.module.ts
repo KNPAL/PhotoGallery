@@ -13,6 +13,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 import { ModelboxComponent } from './body/modelbox/modelbox.component';
 import { NatureComponent } from './body/nature/nature.component';
+import { SpaceComponent } from './body/space/space.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { NatureComponent } from './body/nature/nature.component';
     BirdComponent,
     AnimalComponent,
     ModelboxComponent,
-    NatureComponent
+    NatureComponent,
+    SpaceComponent
   ],
   imports: [
     BrowserModule,

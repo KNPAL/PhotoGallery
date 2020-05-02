@@ -15,7 +15,7 @@ export class HeaderComponent implements OnInit {
     { name: 'Animal', route: '/animal' },
     { name: 'Bird', route: '/bird' },
     { name: 'Nature', route: '/nature' },
-    { name: 'Space', route: '/Space' }
+    { name: 'Space', route: '/space' }
   ];
   constructor(public router: Router) { }
 

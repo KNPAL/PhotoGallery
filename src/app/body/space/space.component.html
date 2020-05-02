@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="row page-header">
+        <h4> {{sectionHeaderName}}</h4>
+    </div>
+    <div class="row">
+        <div class="row">
+            <div class="col-md-4 p-2" *ngFor="let item of spaceList; let i = index">
+                <img class="img-thumbnail rounded" (click)="openDialog(i)"
+                    src="{{'../../../assets/images/' + item+'.jpg'}}">
+            </div>
+        </div>
+    </div>
+</div>
