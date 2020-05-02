@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonDataService } from 'src/services/common-data.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -8,12 +9,12 @@ import { CommonDataService } from 'src/services/common-data.service';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(public commonDataService: CommonDataService) {
-    this.commonDataService.showNavBarOpiton = true;
+  constructor( public commonDataService: CommonDataService) {
+
   }
 
   ngOnInit() {
-
+   // this.commonDataService.hideNavBarElement('Home');
   }
 
 }

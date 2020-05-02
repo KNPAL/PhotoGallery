@@ -1,5 +1,6 @@
 import { Component, OnInit, OnChanges } from '@angular/core';
 import { Router } from '@angular/router';
+import { CommonDataService } from 'src/services/common-data.service';
 
 @Component({
   selector: 'app-header',
@@ -10,17 +11,14 @@ export class HeaderComponent implements OnInit {
 
   public showNavBar: boolean;
   public siteName = 'Photo Gallery';
-  public navigationListArray = [
-    { name: 'Home', route: '/home' },
-    { name: 'Animal', route: '/animal' },
-    { name: 'Bird', route: '/bird' },
-    { name: 'Nature', route: '/nature' },
-    { name: 'Space', route: '/space' }
-  ];
-  constructor(public router: Router) { }
+  public navigationListArray = [];
+  constructor(public router: Router, public commonDataService: CommonDataService) {
+  }
 
   ngOnInit() {
     this.router.events.subscribe(val => {
+      this.commonDataService.hideNavBarElement(this.router.url);
+      this.navigationListArray = this.commonDataService.navigationListArray;
       if (this.router.url.includes('home')) {
         this.showNavBar = false;
       } else {
