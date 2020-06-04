@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ModelboxComponent } from '../modelbox/modelbox.component';
+import { CommonDataService } from 'src/services/common-data.service';
 
 @Component({
   selector: 'app-animal',
@@ -10,9 +11,11 @@ import { ModelboxComponent } from '../modelbox/modelbox.component';
 export class AnimalComponent implements OnInit {
 
   public sectionHeaderName = '';
+  public custumUrl = '';
   public animalList = ['Animal1', 'Animal2', 'Animal10', 'Animal4', 'Animal5', 'Animal6', 'Animal7', 'Animal8', 'Animal9'];
-  constructor(public dialog: MatDialog) {
+  constructor(public dialog: MatDialog, public commonDataService: CommonDataService) {
     this.sectionHeaderName = 'Animal Photos';
+    this.custumUrl = this.commonDataService.hostName;
   }
 
   ngOnInit() {

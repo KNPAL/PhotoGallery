@@ -13,6 +13,7 @@ export class CommonDataService {
     { name: 'Nature', route: '/nature', show: true },
     { name: 'Space', route: '/space', show: true }
   ];
+  public hostName;
   constructor() { }
 
   hideNavBarElement(name: string) {

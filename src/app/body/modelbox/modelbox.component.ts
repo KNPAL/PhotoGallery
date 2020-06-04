@@ -1,5 +1,6 @@
 import { Component, OnInit, Inject, ViewEncapsulation } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { CommonDataService } from 'src/services/common-data.service';
 
 export interface DialogData {
   list: any[];
@@ -18,11 +19,13 @@ export class ModelboxComponent implements OnInit {
   public contentIndex;
   public showleftArrow = false;
   public showrightArrow = false;
+  public custumUrl = '';
   constructor(public dialogRef: MatDialogRef<ModelboxComponent>,
     // tslint:disable-next-line:align
-    @Inject(MAT_DIALOG_DATA) public data: DialogData) {
+    @Inject(MAT_DIALOG_DATA) public data: DialogData, public commonDataService: CommonDataService) {
     this.contentList = this.data.list;
     this.contentIndex = this.data.index;
+    this.custumUrl = this.commonDataService.hostName;
     this.showHideArrows();
   }
 

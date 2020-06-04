@@ -1,7 +1,7 @@
 <mat-dialog-content class="mat-typography p-0">
     <div class="myparent">
         <span class="material-icons arrowleft" (click)="moveleft()" *ngIf="showleftArrow"> keyboard_arrow_left </span>
-        <img class="img-thumbnail rounded"  [src]="'../../../assets/images/' + currentImage+'.jpg'">
+        <img class="img-thumbnail rounded"  [src]="custumUrl+'assets/images/' + currentImage+'.jpg'">
         <span class="material-icons arrowright" (click)="moveright()" *ngIf="showrightArrow"> keyboard_arrow_right </span>
     </div>
 </mat-dialog-content>

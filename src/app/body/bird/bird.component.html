@@ -6,7 +6,7 @@
         <div class="row">
             <div class="col-md-4 p-2" *ngFor="let item of birdList; let i = index">
                 <img class="img-thumbnail rounded" (click)="openDialog(i)"
-                    src="{{'../../../assets/images/' + item+'.jpg'}}">
+                    src="{{custumUrl+'assets/images/' + item+'.jpg'}}">
             </div>
         </div>
     </div>

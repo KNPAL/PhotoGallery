@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ModelboxComponent } from '../modelbox/modelbox.component';
+import { CommonDataService } from 'src/services/common-data.service';
 
 @Component({
   selector: 'app-space',
@@ -10,9 +11,11 @@ import { ModelboxComponent } from '../modelbox/modelbox.component';
 export class SpaceComponent implements OnInit {
 
   public sectionHeaderName = '';
+  public custumUrl = '';
   public spaceList = ['space1'];
-  constructor(public dialog: MatDialog) {
+  constructor(public dialog: MatDialog, public commonDataService: CommonDataService) {
     this.sectionHeaderName = 'Space Photos';
+    this.custumUrl = this.commonDataService.hostName;
   }
   ngOnInit() {
   }
