@@ -6,3 +6,16 @@
 .container-fluid{
     height: 100%!important;
 }
+
+.headerheight{
+    height: 10%;
+}
+
+.footerheight{
+    height: 7%;
+}
+
+.bodyheight{
+    height: 83%;
+    overflow: auto;
+}

@@ -26,4 +26,11 @@ export class HeaderComponent implements OnInit {
       }
     });
   }
+
+  removeClass(event) {
+    if (!!document.getElementsByClassName('show')) {
+      document.getElementsByClassName('show')[0].classList.remove('show');
+      // event.target.classList.remove('show');
+    }
+  }
 }
