@@ -4,7 +4,7 @@
     </div>
     <div class="row">
         <div class="row">
-            <div class="col-md-4 p-2" *ngFor="let item of natureList; let i = index">
+            <div class="col-md-4 p-2 custom-div" *ngFor="let item of natureList; let i = index">
                 <img class="img-thumbnail rounded" (click)="openDialog(i)"
                     src="{{custumUrl+'assets/images/' + item+'.jpg'}}">
             </div>

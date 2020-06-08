@@ -11,3 +11,32 @@
 P.text-center:hover{
     cursor: pointer;    
 }
+
+@media only screen and (max-width: 576px) {
+    .container{
+        padding-top: 5rem;
+    }
+    .boxsize {
+        height: 150px;
+        width: 150px;
+        border: 1px solid #404040;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        border-radius: 1em;
+        box-shadow: 5px 10px 8px 10px #888888;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {}
+
+/* 
+// Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {}
+
+/* 
+// Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {}
