@@ -1,4 +1,4 @@
-import { Component, OnInit, OnChanges } from '@angular/core';
+import { Component, OnInit, OnChanges, HostListener } from '@angular/core';
 import { Router } from '@angular/router';
 import { CommonDataService } from 'src/services/common-data.service';
 
@@ -10,6 +10,7 @@ import { CommonDataService } from 'src/services/common-data.service';
 export class HeaderComponent implements OnInit {
 
   public showNavBar: boolean;
+  public isDesktop: boolean;
   public siteName = 'Photo Gallery';
   public navigationListArray = [];
   constructor(public router: Router, public commonDataService: CommonDataService) {
@@ -26,11 +27,17 @@ export class HeaderComponent implements OnInit {
       }
     });
   }
-
+  @HostListener('window:resize', ['$event'])
+  onResize(event?) {
+    if (window.innerWidth < 576) {
+      this.isDesktop = true;
+    } else {
+      this.isDesktop = false;
+    }
+  }
   removeClass(event) {
-    if (!!document.getElementsByClassName('show')) {
+    if (this.isDesktop && !!document.getElementsByClassName('show')) {
       document.getElementsByClassName('show')[0].classList.remove('show');
-      // event.target.classList.remove('show');
     }
   }
 }

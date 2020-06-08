@@ -1,16 +1,3 @@
-.boxsize{
-    height: 200px;
-    width: 200px;
-    border: 1px solid #404040;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    border-radius: 1em;
-    box-shadow: 5px 10px 8px 10px #888888;
-}
-
-P.text-center:hover{
-    cursor: pointer;    
-}
 
 @media only screen and (max-width: 576px) {
     .container{
@@ -34,9 +21,39 @@ P.text-center:hover{
 /* 
 // Large devices (desktops, 992px and up) */
 
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+    .boxsize{
+        height: 200px;
+        width: 200px;
+        border: 1px solid #404040;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        border-radius: 1em;
+        box-shadow: 5px 10px 8px 10px #888888;
+    }
+    
+    P.text-center:hover{
+        cursor: pointer;    
+    }
+    
+}
 
 /* 
 // Extra large devices (large desktops, 1200px and up) */
 
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+    .boxsize{
+        height: 200px;
+        width: 200px;
+        border: 1px solid #404040;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        border-radius: 1em;
+        box-shadow: 5px 10px 8px 10px #888888;
+    }
+    
+    P.text-center:hover{
+        cursor: pointer;    
+    }
+    
+}
