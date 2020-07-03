@@ -4,14 +4,14 @@
 }
 
 @media only screen and (max-width: 576px) {
-        img {
+        /* img {
                 width: 350px;
         }
         .custom-div {
-                /* margin-left: .75rem;
-                margin-bottom: .75rem; */
+                margin-left: .75rem;
+                margin-bottom: .75rem; 
                 width: 320px;
-        }
+        } */
 
         h4{
                 padding-left: 1rem;

@@ -14,6 +14,11 @@ export class HeaderComponent implements OnInit {
   public siteName = 'Photo Gallery';
   public navigationListArray = [];
   constructor(public router: Router, public commonDataService: CommonDataService) {
+    if (window.innerWidth < 576) {
+      this.isDesktop = true;
+    } else {
+      this.isDesktop = false;
+    }
   }
 
   ngOnInit() {
